@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pense em um número</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icon.png">
+</head>
+<body>
+        <main>
+            <h1>Pense em um número.</h1>
+            <p>Como jogar: pense em um número, depois clique em começar, quando começar, o programa irá mostrar um número,
+                se esse número for MAIOR do que você o número que você pensou, clique no botão menor, e vice-versa. Se o número
+                estiver correto, basta clicar em "Correto".
+            </p>
+            <button onclick="start()" id="comecar">Começar</button>
+
+                <div class="jogotodo" id="jogotodo">
+                    <div class="game">
+                        <button onclick="maior()" onclick="clicou()">Maior ↑</button>
+                        <p id="res">00</p>
+                        <button onclick="menor()">Menor ↓</button>
+                    </div>
+                    
+                        <button onclick="correto()">Correto</button>
+                        <p id="vidas">Tentativas restantes: </p>
+                </div>
+
+                
+        </main>
+        <audio id="acertoFX" src="./acertoFX.mp3"></audio>
+        <audio id="erroFX" src="./erroFX.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
